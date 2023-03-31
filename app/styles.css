@@ -1,7 +1,14 @@
 body {
   background: #eddcd9;
 }
-
+h1 {
+  text-align: left;
+}
+.title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
 .name {
   font-size: 80px;
   font-family: "Signika", sans-serif;
@@ -10,6 +17,10 @@ body {
   max-width: 200px;
 }
 
+.woman-coding-image {
+  border: 0.5px solid #000;
+  border-radius: 941px;
+}
 .main-navbar {
   background: #f2ebe9;
 }
@@ -38,6 +49,7 @@ body {
 .navigation-links {
   display: flex;
   justify-content: start;
+  font-family: "Signika", sans-serif;
 }
 .navigation-links a {
   margin: 20px;
@@ -45,6 +57,7 @@ body {
 .skills {
   text-align: center;
   margin-bottom: 20px;
+  font-family: "Signika", sans-serif;
 }
 .skills-icon {
   display: block;
@@ -54,17 +67,21 @@ body {
 .skills-container {
   max-width: 500px;
 }
+.work-inquiry {
+  margin-top: 5px;
+}
 footer {
   margin: 60px 0;
 }
 footer .contact-box {
-  background: white;
   padding: 30px 120px;
   border-radius: 10px;
   margin: 0 200px;
   background: #f2ebe9;
 }
-
+footer .contact-btn-home {
+  padding: 15px 30px;
+}
 footer .contact-box p {
   margin: 0;
 }
@@ -81,9 +98,21 @@ footer .social-links a {
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 18px;
-  transition: all 100ms ease-in-out;
+  transition: all 100mse ease-in-out;
+}
+footer .social-links a:hover {
+  animation: pop 0.3s linear 1;
+  color: #000;
+}
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
 }
 .contact-btn-home {
+  background: #cddcf3;
+}
+.contact-btn-home:hover {
   background: #cddcf3;
 }
 
@@ -91,15 +120,20 @@ footer .social-links a {
   .logo {
     max-width: 100px;
   }
+
   .woman-coding-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
-  h1 {
+  .name {
     font-size: 55px;
   }
+  .title {
+    font-size: 30px;
+  }
+
   h1,
   h2 {
     text-align: center;
@@ -108,14 +142,6 @@ footer .social-links a {
     justify-content: center;
   }
   .section-3 {
-    display: none;
-  }
-  .contact-box {
-    display: none;
-  }
-}
-@media (max-width: 891px) {
-  .contact-box {
     display: none;
   }
 }
