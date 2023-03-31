@@ -117,6 +117,9 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 576px) {
+  .section-1 {
+    margin-top: 55px;
+  }
   .logo {
     max-width: 100px;
   }
