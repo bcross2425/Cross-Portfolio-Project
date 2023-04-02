@@ -1,7 +1,14 @@
-body {
-  background: #eddcd9;
+:root {
+  --primary-color: #eddcd9;
+  --secondary-color: #f2ebe9;
+  --primary-button-color: #cddcf3;
 }
-h1 {
+
+body {
+  background: var(--primary-color);
+}
+h1,
+h2 {
   text-align: left;
 }
 hr {
@@ -28,7 +35,7 @@ img {
   border-radius: 941px;
 }
 .main-navbar {
-  background: #f2ebe9;
+  background: var(--secondary-color);
 }
 .section-1 {
   margin-top: 100px;
@@ -39,7 +46,7 @@ img {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  background: #cddcf3;
+  background: var(--primary-button-color);
 
   color: #000;
 }
@@ -49,7 +56,7 @@ img {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  background: #cddcf3;
+  background: var(--primary-button-color);
   max-width: 20px;
 }
 
@@ -84,7 +91,7 @@ footer .contact-box {
   padding: 30px 120px;
   border-radius: 10px;
   margin: 0 200px;
-  background: #f2ebe9;
+  background: var(--secondary-color);
 }
 footer .contact-btn-home {
   padding: 15px 30px;
@@ -117,13 +124,13 @@ footer .social-links a:hover {
   }
 }
 .contact-btn-home {
-  background: #cddcf3;
+  background: var(--primary-button-color);
 }
 .contact-btn-home:hover {
-  background: #cddcf3;
+  background: var(--primary-button-color);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 667px) {
   .section-1 {
     margin-top: 85px;
   }
