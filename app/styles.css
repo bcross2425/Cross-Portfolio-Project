@@ -11,6 +11,9 @@ h1,
 h2 {
   text-align: left;
 }
+h4 {
+  font-size: 30px;
+}
 hr {
   opacity: 0.1;
 }
@@ -29,13 +32,28 @@ img {
 .logo {
   max-width: 200px;
 }
+#badge {
+  width: 20px;
+}
 
 .woman-coding-image {
   border: 0.5px solid #000;
   border-radius: 941px;
 }
+.work-container {
+  font-size: 20px;
+  max-width: 500px;
+  text-align: center;
+}
+.work-skills {
+  font-size: 25px;
+}
 .main-navbar {
   background: var(--secondary-color);
+}
+.about-me {
+  font-family: "Satisfy", cursive;
+  font-size: 50px;
 }
 .section-1 {
   margin-top: 100px;
@@ -47,8 +65,14 @@ img {
   text-decoration: none;
   text-transform: capitalize;
   background: var(--primary-button-color);
-
   color: #000;
+}
+.about-container {
+  max-width: 1500px;
+}
+.about-image {
+  width: 75%;
+  border-radius: 30px;
 }
 
 .contact-link {
@@ -99,6 +123,9 @@ footer .contact-btn-home {
 footer .contact-box p {
   margin: 0;
 }
+.footer-remarks {
+  opacity: 0.75;
+}
 
 footer .email-link {
   text-decoration: none;
@@ -130,7 +157,7 @@ footer .social-links a:hover {
   background: var(--primary-button-color);
 }
 
-@media (max-width: 667px) {
+@media (max-width: 800px) {
   .section-1 {
     margin-top: 85px;
   }
@@ -149,10 +176,12 @@ footer .social-links a:hover {
   }
   .title {
     font-size: 30px;
+    text-align: center;
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     text-align: center;
   }
   .navigation-links {
@@ -160,5 +189,19 @@ footer .social-links a:hover {
   }
   .section-3 {
     display: none;
+  }
+  .about-paragraphs {
+    font-size: 15px;
+    text-align: justify;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .work-skills,
+  .fa-check {
+    font-size: 15px;
   }
 }
