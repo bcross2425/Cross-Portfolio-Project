@@ -13,6 +13,7 @@ h2 {
 }
 h4 {
   font-size: 30px;
+  font-family: "Krub", sans-serif;
 }
 hr {
   opacity: 0.1;
@@ -20,10 +21,14 @@ hr {
 img {
   max-width: 100%;
 }
-.title {
-  font-family: "Raleway", sans-serif;
-  font-style: italic;
-  font-size: 35px;
+
+/*index page*/
+.main-navbar {
+  background: var(--secondary-color);
+}
+.section-1 {
+  margin-top: 100px;
+  max-width: 1000px;
 }
 .name {
   font-size: 80px;
@@ -32,32 +37,48 @@ img {
 .logo {
   max-width: 200px;
 }
-#badge {
-  width: 20px;
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+.navigation-links {
+  display: flex;
+  justify-content: start;
+  font-family: "Signika", sans-serif;
+}
+.navigation-links a {
+  margin: 20px;
+}
+.skills {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Krub", sans-serif;
+}
+.skills-icon {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+}
+.skills-container {
+  max-width: 500px;
+  font-family: "Krub", sans-serif;
 }
 
-.woman-coding-image {
-  border: 0.5px solid #000;
-  border-radius: 941px;
-}
-.work-container {
-  font-size: 20px;
-  max-width: 500px;
+/*about page*/
+.about-heading {
   text-align: center;
-}
-.work-skills {
-  font-size: 25px;
-}
-.main-navbar {
-  background: var(--secondary-color);
+  font-family: "Nanum Myeongjo", serif;
 }
 .about-me {
   font-family: "Satisfy", cursive;
   font-size: 50px;
+  text-align: center;
 }
-.section-1 {
-  margin-top: 100px;
-  max-width: 1000px;
+.about-paragraphs {
+  font-family: "Krub", sans-serif;
+  font-weight: 500px;
 }
 .about-link {
   border-radius: 4px;
@@ -73,41 +94,70 @@ img {
 .about-image {
   width: 75%;
   border-radius: 30px;
-}
-
-.contact-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-button-color);
-  max-width: 20px;
-}
-
-.navigation-links {
-  display: flex;
-  justify-content: start;
-  font-family: "Signika", sans-serif;
-}
-.navigation-links a {
-  margin: 20px;
-}
-.skills {
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "Signika", sans-serif;
-}
-.skills-icon {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#badge {
+  width: 20px;
+}
+.certificates {
+  font-family: "Krub", sans-serif;
+}
+
+.woman-coding-image {
+  border: 0.5px solid #000;
+  border-radius: 941px;
+}
+.work-container {
+  font-size: 20px;
+  max-width: 560px;
   text-align: center;
-  font-size: 60px;
+  font-family: "Krub", sans-serif;
 }
-.skills-container {
-  max-width: 500px;
+.work-skills {
+  font-size: 25px;
 }
-.work-inquiry {
-  margin-top: 5px;
+
+.certifications {
+  max-width: 800px;
 }
+.certifications-link {
+  transition: all 100ms ease-in-out;
+}
+.certifications-link:hover {
+  animation: pop 0.5s linear 1;
+  opacity: 0.75;
+}
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/*projects page*/
+.projects-heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-heading:before,
+.projects-heading::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #615f61;
+  margin: auto;
+}
+
+.memoji {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+/*footer*/
 footer {
   margin: 60px 0;
 }
@@ -119,6 +169,9 @@ footer .contact-box {
 }
 footer .contact-btn-home {
   padding: 15px 30px;
+}
+footer .contact-btn-home:hover {
+  border-color: #202853;
 }
 footer .contact-box p {
   margin: 0;
@@ -150,6 +203,9 @@ footer .social-links a:hover {
     transform: scale(1.2);
   }
 }
+.work-inquiry {
+  margin-top: 5px;
+}
 .contact-btn-home {
   background: var(--primary-button-color);
 }
@@ -157,6 +213,7 @@ footer .social-links a:hover {
   background: var(--primary-button-color);
 }
 
+/*media query*/
 @media (max-width: 800px) {
   .section-1 {
     margin-top: 85px;
@@ -165,7 +222,8 @@ footer .social-links a:hover {
     max-width: 100px;
   }
 
-  .woman-coding-image {
+  .woman-coding-image,
+  .memoji {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -177,6 +235,9 @@ footer .social-links a:hover {
   .title {
     font-size: 30px;
     text-align: center;
+  }
+  .projects-heading {
+    font-size: 20px;
   }
 
   h1,
@@ -202,6 +263,12 @@ footer .social-links a:hover {
   }
   .work-skills,
   .fa-check {
-    font-size: 15px;
+    font-size: 18px;
+  }
+  .certifications {
+    max-width: 500px;
+  }
+  .certifications-link {
+    margin-bottom: 20px;
   }
 }
