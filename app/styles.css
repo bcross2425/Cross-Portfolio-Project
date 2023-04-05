@@ -140,22 +140,36 @@ img {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-}
-
-.projects-heading:before,
-.projects-heading::after {
-  content: "";
-  flex: 1 1;
-  border-bottom: 1px solid #615f61;
-  margin: auto;
+  text-align: center;
 }
 
 .memoji {
   display: block;
   margin: 0 auto;
   margin-top: 40px;
+}
+
+.project-image {
+  max-width: 70%;
+}
+
+.card-body {
+  background: #eddcd9;
+}
+.card {
+  border: none;
+}
+.btn-primary {
+  background: #cddcf3;
+  color: #212529;
+  border: none;
+}
+.project-section {
+  max-width: 900px;
+}
+
+.weather-card {
+  margin-top: 50px;
 }
 /*footer*/
 footer {
@@ -270,5 +284,12 @@ footer .social-links a:hover {
   }
   .certifications-link {
     margin-bottom: 20px;
+  }
+
+  .project-image {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
