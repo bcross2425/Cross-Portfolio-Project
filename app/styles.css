@@ -176,6 +176,23 @@ img {
 .card-text {
   font-family: Krub, sans-serif;
 }
+
+/*contact page*/
+.contact-heading {
+  font-family: "Satisfy", cursive;
+  font-size: 50px;
+}
+.contact-me {
+  border: 1px solid gray;
+  margin-left: 50px;
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: #f2ebe8;
+}
+
+li {
+  text-decoration: none;
+}
 /*footer*/
 footer {
   margin: 60px 0;
@@ -302,5 +319,11 @@ footer .social-links a:hover {
   }
   .card {
     border: none;
+  }
+  .contact-me {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
