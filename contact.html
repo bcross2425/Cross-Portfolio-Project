@@ -78,7 +78,22 @@
       <div class="d-flex justify-content-center">
         <div class="col-sm-6 contact-me">
           <div class="mt-3 text-center" style="font-size: 30px">Contact Me</div>
-          <form class="p-3 mt-2">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="p-3 mt-2"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="41f9ca62-0fca-41ba-9787-3154e2ba2cab"
+            />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://delightful-semifreddo-b87a25.netlify.app/contact"
+              alert="Your email has successfully sent"
+            />
             <div class="mb-3">
               <label>Name</label>
               <input
@@ -95,6 +110,7 @@
               <input
                 type="email"
                 name="email"
+                id="email"
                 class="form-control"
                 autofocus
                 required
@@ -165,6 +181,5 @@
         </a>
       </p>
     </footer>
-    <script src="src/index.js"></script>
   </body>
 </html>
