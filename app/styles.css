@@ -199,6 +199,15 @@ img {
 li {
   text-decoration: none;
 }
+/*thank you page*/
+.thank-you {
+  text-align: center;
+  font-size: 50px;
+}
+.contact-2 {
+  font-size: 20px;
+  text-align: center;
+}
 /*footer*/
 footer {
   margin: 60px 0;

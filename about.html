@@ -80,7 +80,16 @@
         <div class="col-md-6">
           <h1 class="mt-5 mb-4 about-me">About Me</h1>
           <h3 class="mb-3 about-heading">Hello 👋🏽 My name is Brittany Cross</h3>
-          <h4>Web Designer and Developer 💻</h4>
+          <h4>💻<span class="auto-type"></span></h4>
+          <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+          <script>
+            var type = new Typed(".auto-type", {
+              strings: ["Web Designer", "Developer "],
+              typeSpeed: 200,
+              backsSpeed: 200,
+              loop: true,
+            });
+          </script>
 
           <p class="about-paragraphs">
             Greetings from Orlando, FL! I'm a Global Product Support Analyst
@@ -150,7 +159,7 @@
     <h1 class="mt-5 certificates text-center">Certifications</h1>
     <div class="container-fluid mt-5 certifications">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <a
             h
             href="https://www.shecodes.io/certificates/4f2fb0becaff2e8c676be9b51a1275a9"
@@ -159,16 +168,15 @@
             <img src="images/SheCodes-Basic.png" class="certifications-link" />
           </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <a
             href="https://www.shecodes.io/certificates/2cfb4d60a3679c851d80f2c6a1332d7f"
             target="blank"
             ><img src="images/SheCodes-Plus.png" class="certifications-link" />
           </a>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mt-5 responsive">
+
+        <div class="col-md-4 responsive">
           <a
             href="https://www.shecodes.io/certificates/cab247504627c8bcdc29dbf751594eaf"
             target="blank"
@@ -178,11 +186,20 @@
             />
           </a>
         </div>
-        <div class="col-md-6 mt-5 responsive">
+      </div>
+      <div class="row">
+        <div class="col-md-4 mt-4 responsive">
           <a
             href="https://www.shecodes.io/certificates/6387f1beba122e09696e2cff5384d088"
             target="blank"
             ><img src="images/SheCodes-React.png" class="certifications-link" />
+          </a>
+        </div>
+        <div class="col-md-4 mt-4 responsive">
+          <a
+            href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=09EBBEFA5D7A91530FD6DF08D3BA6DB36B90C9D05D40AC307FCB4F5340E87445"
+            target="blank"
+            ><img src="images/Apex-cert.png" class="certifications-link" />
           </a>
         </div>
       </div>
