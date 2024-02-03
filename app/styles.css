@@ -42,8 +42,8 @@ img {
 
 .title {
   font-family: "Raleway", sans-serif;
-  font-style: italic;
-  font-size: 35px;
+
+  font-size: 45px;
 }
 .navigation-links {
   display: flex;
