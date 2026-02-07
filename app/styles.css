@@ -23,7 +23,13 @@ hr {
 img {
   max-width: 100%;
 }
-
+.quote {
+  font-family: "Raleway", sans-serif; /* or any font */
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  font-weight: bolder;
+}
 /*index page*/
 .main-navbar {
   background: var(--secondary-color);
@@ -340,5 +346,10 @@ footer .social-links a:hover {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+  .quote {
+    font-family: "Raleway", sans-serif; /* or any font */
+    font-size: 0.8rem;
+    font-style: italic;
   }
 }
